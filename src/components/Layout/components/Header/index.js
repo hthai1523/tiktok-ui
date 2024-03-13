@@ -19,8 +19,6 @@ import {
     faEarthAsia,
     faCircleQuestion,
     faKeyboard,
-    faCloudUpload,
-    faMessage,
     faUser,
     faGear,
     faCoins,
@@ -28,6 +26,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import AccountItem from '../../../AccountItem';
 import Menu from '~/components/Popper/Menu';
+import { MessageIcon, UploadIcon } from '~/components/icons';
+import Image from '~/components/image';
+
 
 const cx = classNames.bind(styles);
 
@@ -152,9 +153,9 @@ function Header() {
                     </Button>
                     {currentUser ? (
                         <>
-                            <Tippy content="Messages" placement="bottom" delay={200}>
-                                <button>
-                                    <FontAwesomeIcon icon={faMessage} className={cx('action-btn')} />
+                            <Tippy content="Messages" placement="bottom" delay={[0, 200]}>
+                                <button className={cx('action-btn')}>
+                                    <MessageIcon />
                                 </button>
                             </Tippy>
                         </>
@@ -168,10 +169,11 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/362642983_2013560672340910_6601869634510222777_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=106&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Ykghvr9n-MkAX-tkoJm&_nc_ht=scontent-lax3-2.xx&oh=00_AfBkxn83wqoozpv8Q3h0GE6C-iLOtl_i93pGxM_LR-HNhQ&oe=65EB3B17"
                                 className={cx('user-avatar')}
                                 alt="nguyen van a"
+                                // fallback='https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png'
                             />
                         ) : (
                             <button className={cx('more-btn')}>
