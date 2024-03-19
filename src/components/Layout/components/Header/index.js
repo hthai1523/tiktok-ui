@@ -135,7 +135,7 @@ function Header() {
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
                             <Image
-                                src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/362642983_2013560672340910_6601869634510222777_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=106&ccb=1-7&_nc_sid=5740b7&_nc_ohc=Ykghvr9n-MkAX-tkoJm&_nc_ht=scontent-lax3-2.xx&oh=00_AfBkxn83wqoozpv8Q3h0GE6C-iLOtl_i93pGxM_LR-HNhQ&oe=65EB3B17"
+                                src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-1/362642983_2013560672340910_6601869634510222777_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Bt6h14CgkeUAX9SbQhn&_nc_ht=scontent.fhan14-5.fna&oh=00_AfB63PlzziLWcmqCoGC-YAqllh8zo5iKwJJe52G1DAf2CQ&oe=65FD0757"
                                 className={cx('user-avatar')}
                                 alt="nguyen van a"
                                 // fallback='https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png'
